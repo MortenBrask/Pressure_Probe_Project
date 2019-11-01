@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Java Script -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.blockUI({ message: null });
+      });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Forside</title>
+  </head>
+  <body>
+    <div class="full-height-container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="card">
+              <div class="card-body">
+
+                <div class="col-md-8 offset-md-2">
+                  <div class="input-group mb-5">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ID #</span>
+                    </div>
+                    <input type="text" id="random-id" class="form-control" readonly placeholder="Unique ID" value="">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="new-random-id-button">Generate New ID</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-4">
+
+                    <div class="dropdown">
+                      <button class="btn btn-outline-primary dropdown-toggle mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Test Actions
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <!-- <a class="dropdown-item" href="#" style="padding: 1rem 1.5rem;">Reset Test Protocol</a> -->
+                        <a class="dropdown-item" href="download.html" style="padding: 1rem 1.5rem;">Downloads</a>
+                        <a class="dropdown-item" href="settings.html" style="padding: 1rem 1.5rem;">Settings</a>
+                        <a class="dropdown-item" href="calibration.html" style="padding: 1rem 1.5rem;">Calibration</a>
+                        <a class="dropdown-item" href="raw-data.html" style="padding: 1rem 1.5rem;">Raw Capture</a>
+                        <a id="reset_wifi" class="dropdown-item" href="#" style="padding: 1rem 1.5rem;">Reset Wifi Configuration</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <a id="resume-test-button" class="btn btn-outline-info mb-3" display="none" href="#" role="button">Resume Latest Test</a>
+                  </div>
+                  <div class="col-4">
+                    <a id="start-test-button" class="btn btn-outline-success mb-3" href="#" role="button">Start Test</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="websocket.js"></script>    
+<script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

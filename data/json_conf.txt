@@ -1,0 +1,12 @@
+{
+  "type": "settings",
+  "cal_factor": 105200.00,
+  "vas_freq": 1,
+  "target_roc": 50, 
+  "max_pressure": 600,
+  "known_weight": 0.050,
+  "unique_id": 3545338634,
+  "prev_unique_id": 3545338634,  
+  "prev_test": 6,
+  "prev_sub": 0  
+}

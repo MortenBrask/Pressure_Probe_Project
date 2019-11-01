@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Java Script -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.blockUI({ message: null });
+      });
+    </script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Pain Threshold Test - %LD_SELECT%</title>
+  </head>
+  <body>
+    <div class="full-height-container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-8 offset-md-2 text-center">
+            <div class="card">
+              <div class="card-body">
+
+                <h1 class="mb-3 mt-3">Pain Threshold Test - %LD_SELECT%</h1>
+
+                <!-- User buttons -->
+                <div class="col-12" style="margin-top: 7rem; margin-bottom: 7rem;">
+                  <button type="button" id="ready-button" class="btn btn-success btn-lg btn-block" style="padding: 1.5rem 3rem;">
+                    I am ready for the test
+                  </button>
+                  <button type="button" id="pain-button" class="btn btn-danger btn-lg btn-block" style="padding: 1.5rem 3rem; display: none;">
+                    I start to feel pain
+                  </button>
+                </div>
+
+                <!-- Measurements -->
+                <div class="col-12">
+                  <ul style="padding-left: 0px;">
+                    <li id="measure-one" class="mb-1" style="display: none;">Measurement 1 - Completed</li>
+                    <li id="measure-two" class="mb-1" style="display: none;">Measurement 2 - Completed</li>
+                    <li id="measure-three" class="mb-1" style="display: none;">Measurement 3 - Completed</li>
+                  </ul>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="row">
+                  <div class="col-md-4">
+                    <a id="abort" class="btn btn-outline-dark mb-3 mr-3" href="index.html" role="button">Abort Test Suite</a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <button id="reset-button" type="button" class="btn btn-warning mb-3" style="display: none;">Reset Latest Test</button>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a id="next" class="btn btn-outline-primary mb-3 toggle-buttons" href="video.html" role="button" style="display: none;">Next Test</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="prevent-back-button.js" charset="utf-8" type="text/javascript"></script>
+    
+    <script src="websocket.js" charset="utf-8" type="text/javascript"></script>    
+    <script src="measurement.js" charset="utf-8" type="text/javascript"></script>    
+  </body>
+</html>

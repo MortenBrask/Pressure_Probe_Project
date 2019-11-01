@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Java Script -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.blockUI({ message: null });
+      });
+    </script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b21755808a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Forside</title>
+  </head>
+  <body>
+    <div class="full-height-container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-8 offset-md-2 text-center">
+
+            <p class="lead mb-5">Downloads</p>
+
+            <p>Test progress</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK1%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-1: Pain Threshold Local">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK2%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-2: Pain Threshold Distal">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK3%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-3: Pain Intensity Local">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK4%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-4: Pain Intensity Distal">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK5%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-5: Temporal Summation Local">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK6%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-6: Temporal Summation Distal">
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-5">
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK7%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-7: Cold Pressor">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class=%CHECK8%></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="" readonly value="TEST-8: Temporal Summation Distal">
+                </div>
+              </div>
+            </div>
+
+            <p>Last test: <span id="last-test">Now</span></p>
+
+            <div class="row">
+              <div class="col-6">
+
+                <div class="dropdown">
+                  <button class="btn btn-outline-secondary dropdown-toggle mb-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Downloads
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" id="dropTest" href="#" style="padding: 1rem 1.5rem;">Test protocol</a>
+                    <a class="dropdown-item" id="dropRaw" href="downloadraw.html" style="padding: 1rem 1.5rem;">Raw data capture</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <a class="btn btn-outline-success mb-3" href="index.html" role="button">Frontpage</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> 
+
+    <!-- JavaScript -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="websocket.js"></script>    
+    <script src="download.js"></script>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  color: #555;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 300;
+}
+
+span {
+  font-weight: 400;
+}
+
+.full-height-container {
+  height: 100vh;
+  min-height: 500px;
+  background-color: #F5F8FA;
+}
+
+.card {
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.18);
+}
+
+iframe {
+  border-radius: 6px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider.slider-vertical {
+  height: 250px;
+}
+
+@media (max-width: 575.98px) {
+  .slider.slider-vertical {
+    height: 210px;
+  }
+}
+
+.slider.slider-vertical .slider-track {
+  /* width: 50px Original*/
+  width: 100px;
+  height: 100%;
+  left: -198%;
+  /* left: -75%; Original */
+  top: 0;
+}
+.fa-check-circle {
+  color: green;
+}
+.fa-times-circle {
+  color: red;
+}
+
+#slider .slider-track-high {
+  background: red;
+}

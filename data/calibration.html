@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Java Script -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.blockUI({ message: null });
+      });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Calibration</title>
+  </head>
+  <body>
+    <div class="full-height-container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-8 offset-md-2 text-center">
+
+            <p>Calibration</p>                 
+
+            <div class="input-group mb-5">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Kg</span>
+              </div>
+              <input type="number" id="measure-val" class="form-control" placeholder="Kg" value="">
+              <input type="number" id="factor-val" class="form-control" placeholder="Calibration Factor" value="">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="factor-button">Set</button>
+              </div>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="plus-button">+</button>
+              </div>
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="minus-button">-</button>
+              </div>
+            </div>
+
+            <div class="input-group mb-5">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Known weight</span>
+                </div>
+                <input type="number" id="known-val" class="form-control" placeholder="Insert known weight" value="0.000">
+                <div class="input-group-append">
+                  <span class="input-group-text">Kg</span>
+                </div>
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="weight-button">Update known weight</button>
+                </div>
+            </div>
+
+            <div class="card mb-5">
+              <div class="card-body">                  
+                  <h5 id="heading"class="card-title">Calibration Procedure</h5>
+                  <p id="calibration-text" class="card-text">The calibration procedure is initiated when pressing start, make sure there is NO weight on the probe.
+                      Follow the instruction shown here for correct calibration procedure.
+                  </p>
+                  <button type="button" id="start-button" class="btn btn-success btn-block">
+                    START CALIBRATION
+                  </button>
+                  <button type="button" id="calibrate-button" class="btn btn-warning btn-block" style="display: none;">
+                    CALIBRATE
+                  </button>                 
+              </div>
+            </div>
+
+            <button id="restart-calibration-button" type="button" class="btn btn-outline-dark mb-3 mr-3">Restart Calibration</button>
+
+            <a id="save-button" class="btn btn-success mb-3 ml-3" href="#" role="button">Save</a>
+
+            <a id="frontpage-button" class="btn btn-outline-success mb-3 ml-3" href="index.html" role="button">Frontpage</a>
+            
+            <div id="alert" class="alert alert-success alert-dismissible fade" role="alert">
+              Settings are saved correctly
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="websocket.js" charset="utf-8"></script>    
+    <script src="calibration.js" charset="utf-8"></script>
+  </body>
+</html>

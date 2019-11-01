@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Java Script -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.blockUI({ message: null });
+      });
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="full-height-container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-md-8 offset-md-2 text-center">
+
+            <p class="mb-5">Settings</p>
+            <form class="needs-validation" novalidate>
+              <div class="input-group mb-5">
+
+                  <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">Target ROC</span>
+                      </div>
+                      <input type="number" class="form-control" id="target-roc" min="10" max="50" placeholder="ROC"
+                        aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Please insert target ROC (10-50)
+                      </div>
+                    </div>
+
+
+                <!-- <div class="input-group-prepend">
+                  <span class="input-group-text">Target ROC</span>
+                </div>
+                <input type="text" id="target-roc" class="form-control" value="" min="10" max="50" required>              
+              </div> -->
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend">MAX Pressure</span>
+                  </div>
+                  <input type="number" class="form-control" id="max-pressure" min="100" max="1000" placeholder="MAX kPa"
+                    aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Please insert MAX pressure (100-1000)
+                  </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend">VAS frequency (Hz)</span>
+                    </div>
+                    <input type="number" class="form-control" id="vas-frequence" min="1" max="5" placeholder="Hz"
+                      aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please insert VAS frequency (1-5)
+                    </div>
+                  </div>             
+                  <button type="submit" id="save-button" class="btn btn-outline-success mb-3 mr-3">Save</button>
+            </form>
+            
+            <a class="btn btn-outline-primary mb-3 ml-3" href="index.html" role="button">Frontpage</a>
+
+            <div id="alert" class="alert alert-success alert-dismissible fade" role="alert">
+              Settings are saved correctly
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="websocket.js" charset="utf-8"></script>    
+    <script src="settings.js" charset="utf-8"></script>
+  </body>
+</html>
