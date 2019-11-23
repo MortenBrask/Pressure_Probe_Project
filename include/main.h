@@ -20,8 +20,8 @@
 #define SCREEN_HEIGHT 64                                        // OLED display height, in pixels
 #define OLED_RESET 4
 
-#define HX711_DATA 25
-#define HX711_CLK 26
+#define HX711_DATA 26
+#define HX711_CLK 25
 
 //DEFINES END--------------------------------------------------------------------------------
 
