@@ -209,21 +209,21 @@ String template_processor(const String& var)
     if(var == "SOURCEVIDEO"){
         switch (test_flags.test){
             case TEST_1:
-                return String("https://youtu.be/NETFwYTlK6A");      //URL to an instruction video to TEST_1
+                return String("https://www.youtube.com/embed/mLy7_ZMYRao");      //URL to an instruction video to TEST_1
             case TEST_2:
-                return String("https://youtu.be/NETFwYTlK6A");
+                return String("https://www.youtube.com/embed/mLy7_ZMYRao");
             case TEST_3:
-                return String("https://youtu.be/FXQow21r86Y");
+                return String("https://www.youtube.com/embed/FXQow21r86Y");
             case TEST_4:
-                return String("https://youtu.be/FXQow21r86Y");
+                return String("https://www.youtube.com/embed/FXQow21r86Y");
             case TEST_5:
-                return String("https://youtu.be/N-ks1kCI6Pw");
+                return String("https://www.youtube.com/embed/N-ks1kCI6Pw");
             case TEST_6:
-                return String("https://youtu.be/N-ks1kCI6Pw");
+                return String("https://www.youtube.com/embed/N-ks1kCI6Pw");
             case TEST_7:
-                return String("https://youtu.be/_tjogGNOC5Q");
+                return String("https://www.youtube.com/embed/_tjogGNOC5Q");
             case TEST_8:
-                return String("https://youtu.be/FXQow21r86Y");
+                return String("https://www.youtube.com/embed/FXQow21r86Y");
             default:
                 return String("https://www.youtube.com/embed/NpEaa2P7qZI");
         }         
